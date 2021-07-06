@@ -223,6 +223,7 @@ span {
 #about {
   position: relative;
   /* background-color: #212121; */
+  height: 85vh;
   color: var(--fontColor);
 }
 
@@ -268,6 +269,7 @@ span {
   width: 1200px;
   /* display: grid; */
   display: flex;
+  gap: 3rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -278,8 +280,8 @@ span {
 } */
 .card1 {
   position: relative;
-  width: 300px;
-  height: 350px;
+  width: 250px;
+  height: 300px;
   background: #fff;
   /* margin: 0 auto; */
   border-radius: 4px;
@@ -422,6 +424,20 @@ i {
   .heading h2,
   .info h2 {
     font-size: 2rem;
+  }
+  .card1 {
+    width: 300px;
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .col-sm-5 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media screen and (min-width: 768px) {
